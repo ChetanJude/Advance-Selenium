@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="Regression Test"></include>
+		</run>
+	</groups>
+  <test thread-count="5" name="Test">
+	<parameter name="Browser" value="Firefox"></parameter>
+    <classes>
+      <class name="com.vtiger.crm.contacttest.Working_with_ContactModuleTest"/>
+      <class name="com.vtiger.crm.orgtest.Working_with_OrganizationModuleTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

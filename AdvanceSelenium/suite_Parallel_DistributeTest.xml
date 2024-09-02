@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" thread-count="5" name="Suite">
+	<listeners>
+		<listener class-name="com.vtiger.crm.ListenerUtility.ListenerImplimentationClass"></listener>
+	</listeners>
+  <test name="Test-1">
+	<parameter name="Browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.vtiger.crm.contacttest.Working_with_ContactModuleTest"/>
+    </classes>
+  </test> 
+  <test name="Test-2">
+    <classes>
+      <class name="com.vtiger.crm.orgtest.Working_with_OrganizationModuleTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite>
+
