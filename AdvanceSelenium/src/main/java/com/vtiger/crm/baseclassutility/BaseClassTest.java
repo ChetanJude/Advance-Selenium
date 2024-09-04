@@ -46,7 +46,7 @@ public class BaseClassTest {
 		System.out.println("==open the browser==");
 		
 		String browser = /*browsers;*/
-				System.getProperty("browswer", flib.getDatafromPropertiesFile("browser"));
+				System.getProperty("brows er"/* , flib.getDatafromPropertiesFile("browser") */);
 		
 		if(browser.equalsIgnoreCase("chrome")) {
 			driver= new ChromeDriver();
@@ -70,9 +70,9 @@ public class BaseClassTest {
 		System.out.println("==login to app==");
 		//Thread.sleep(3000);
 		LoginPage lplib= new LoginPage(driver);
-		String url = System.getProperty("url", flib.getDatafromPropertiesFile("url"));
-		String username = System.getProperty("username", flib.getDatafromPropertiesFile("username"));
-		String password = System.getProperty("password", flib.getDatafromPropertiesFile("password"));
+		String url = System.getProperty("url"/* , flib.getDatafromPropertiesFile("url") */);
+		String username = System.getProperty("username"/* , flib.getDatafromPropertiesFile("username") */);
+		String password = System.getProperty("password"/* , flib.getDatafromPropertiesFile("password") */);
 		lplib.loginToApp(url,username, password);
 		
 	}
