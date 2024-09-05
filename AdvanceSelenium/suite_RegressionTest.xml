@@ -6,6 +6,9 @@
 			<include name="Regression Test"></include>
 		</run>
 	</groups>
+	<listeners>
+		<listener class-name="com.vtiger.crm.ListenerUtility.ListenerImplimentationClass"></listener>
+	</listeners>
   <test thread-count="5" name="Test">
 	<parameter name="Browser" value="Firefox"></parameter>
     <classes>
